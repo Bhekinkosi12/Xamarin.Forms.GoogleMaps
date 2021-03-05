@@ -9,6 +9,7 @@ namespace Xamarin.Forms.GoogleMaps.Extensions
             var halfLong = self.LongitudeDegrees / 2d;
 
             var southWest = new Position(self.Center.Latitude - halfLat, self.Center.Longitude - halfLong);
+            
             var northEast = new Position(self.Center.Latitude + halfLat, self.Center.Longitude + halfLong);
 
             return new Bounds(southWest, northEast);
